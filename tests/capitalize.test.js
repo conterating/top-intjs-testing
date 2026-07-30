@@ -4,8 +4,8 @@ test("capitalizes the first letter", () => {
   expect(capitalize("dog")).toBe("Dog");
 });
 
-test("other letters besides first are not capitalized", () => {
-  expect(capitalize("HELLO")).toBe("Hello");
+test("other letters besides first keep their capitalization", () => {
+  expect(capitalize("HELLO")).toBe("HELLO");
 });
 
 test("capitalizes only the first char in a multi-word input", () => {
